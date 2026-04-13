@@ -318,7 +318,7 @@ footer {
     }
 
     .about-text {
-        max-width: 300px;
+        max-width: 260px;
         margin: 0 auto;
     }
 
@@ -391,7 +391,7 @@ footer {
     }
 
     .about-text {
-        max-width: 420px;
+        max-width: 300px;
         margin: 0 auto;
     }
 }
@@ -409,11 +409,11 @@ footer {
         text-align: center;
     }
     .about-text {
-        max-width: 230px;
+        max-width: 200px;
         margin: 0 auto;
     }
     .about-text p {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
     .about-image {
         max-width: 180px;
