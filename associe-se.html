@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associe-se - ACIAM Franco da Rocha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .membership-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .benefit-box {
+            background-color: var(--light-bg);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .benefit-box ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .benefit-box li {
+            padding-left: 30px;
+            position: relative;
+        }
+        .benefit-box li::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+        .form-card {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary-color);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .btn-associe {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-associe:hover {
+            background-color: #004d2e;
+        }
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.png" alt="ACIAM Logo" class="nav-logo">
+                    <h1 class="nav-title">ACIAM <span>Franco da Rocha</span></h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="gestao.html">Gestão</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="associe-se.html" class="btn-cta">Associe-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Seja um Associado</h2>
+            <div class="membership-content">
+                <div class="benefit-box">
+                    <h3>Benefícios de ser ACIAM</h3>
+                    <p>Ao se associar à ACIAM Franco da Rocha, você fortalece sua empresa e contribui para o desenvolvimento de toda a nossa região.</p>
+                    <ul>
+                        <li>Consultas de crédito SCPC/Boa Vista</li>
+                        <li>Convênios Médicos e Odontológicos</li>
+                        <li>Networking com empresários locais</li>
+                        <li>Descontos em cursos e faculdades</li>
+                        <li>Assessoria Jurídica e Contábil</li>
+                        <li>Certificação Digital com preço especial</li>
+                    </ul>
+                </div>
+
+                <div class="form-card">
+                    <h3>Pré-Cadastro de Associado</h3>
+                    <p style="margin-bottom: 30px;">Preencha o formulário abaixo e nossa equipe entrará em contato para finalizar sua adesão.</p>
+                    <form id="associeForm">
+                        <div class="form-group">
+                            <label for="empresa">Nome da Empresa / Razão Social</label>
+                            <input type="text" id="empresa" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cnpj">CNPJ / CPF</label>
+                                <input type="text" id="cnpj" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo">Tipo de Negócio</label>
+                                <select id="tipo">
+                                    <option value="comercio">Comércio</option>
+                                    <option value="industria">Indústria</option>
+                                    <option value="servicos">Serviços</option>
+                                    <option value="mei">MEI</option>
+                                    <option value="agro">Agronegócio</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contato">Pessoa de Contato</label>
+                                <input type="text" id="contato" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone / WhatsApp</label>
+                                <input type="tel" id="telefone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email_assoc">E-mail Corporativo</label>
+                            <input type="email" id="email_assoc" required>
+                        </div>
+                        <button type="submit" class="btn-associe">Enviar Solicitação</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="ACIAM Logo" class="footer-logo">
+                <p>Associação Comercial Industrial e do Agronegócio Metropolitano Paulista.</p>
+                <p>A nossa força vem da união.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Rua Doutor Hamilton Prado, 746, 1º Andar</p>
+                <p>Centro, Franco da Rocha - SP</p>
+                <p>Tel: (11) 3014-0455</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul style="list-style: none;">
+                    <li><a href="sobre.html" style="color: white;">Sobre Nós</a></li>
+                    <li><a href="servicos.html" style="color: white;">Serviços</a></li>
+                    <li><a href="contato.html" style="color: white;">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACIAM Franco da Rocha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Script específico para o formulário de associação
+        const associeForm = document.getElementById('associeForm');
+        if (associeForm) {
+            associeForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato em breve.');
+                associeForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

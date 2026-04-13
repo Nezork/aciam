@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - ACIAM Franco da Rocha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-item {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            transition: all 0.3s;
+        }
+        .service-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .service-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        .service-item ul {
+            list-style: none;
+        }
+        .service-item ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .service-item ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.png" alt="ACIAM Logo" class="nav-logo">
+                    <h1 class="nav-title">ACIAM <span>Franco da Rocha</span></h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="gestao.html">Gestão</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="associe-se.html" class="btn-cta">Associe-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">Oferecemos uma gama completa de serviços e benefícios para impulsionar o seu negócio e garantir a segurança de suas transações.</p>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Consulta SCPC</h3>
+                    <p>Segurança total em suas vendas com acesso ao maior banco de dados de crédito do Brasil.</p>
+                    <ul style="margin-top: 20px;">
+                        <li>Análise de Crédito Pessoa Física</li>
+                        <li>Análise de Crédito Pessoa Jurídica</li>
+                        <li>Recuperação de Crédito</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Certificado Digital</h3>
+                    <p>Emissão de certificados para empresas e profissionais liberais com agilidade e segurança.</p>
+                    <ul style="margin-top: 20px;">
+                        <li>e-CPF e e-CNPJ</li>
+                        <li>NF-e (Nota Fiscal Eletrônica)</li>
+                        <li>Assinatura Digital de Documentos</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Capacitação</h3>
+                    <p>Cursos, palestras e workshops voltados para o aprimoramento profissional e gestão empresarial.</p>
+                    <ul style="margin-top: 20px;">
+                        <li>Treinamentos de Vendas</li>
+                        <li>Gestão Financeira</li>
+                        <li>Marketing Digital para Negócios</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Assessoria Jurídica</h3>
+                    <p>Orientação especializada para garantir que sua empresa esteja sempre em conformidade com a lei.</p>
+                    <ul style="margin-top: 20px;">
+                        <li>Consultas Trabalhistas</li>
+                        <li>Direito do Consumidor</li>
+                        <li>Análise de Contratos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="ACIAM Logo" class="footer-logo">
+                <p>Associação Comercial Industrial e do Agronegócio Metropolitano Paulista.</p>
+                <p>A nossa força vem da união.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Rua Doutor Hamilton Prado, 746, 1º Andar</p>
+                <p>Centro, Franco da Rocha - SP</p>
+                <p>Tel: (11) 3014-0455</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul style="list-style: none;">
+                    <li><a href="sobre.html" style="color: white;">Sobre Nós</a></li>
+                    <li><a href="servicos.html" style="color: white;">Serviços</a></li>
+                    <li><a href="contato.html" style="color: white;">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACIAM Franco da Rocha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

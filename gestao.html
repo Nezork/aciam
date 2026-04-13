@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão - ACIAM Franco da Rocha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .board-member {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+        .board-member:hover {
+            transform: translateY(-10px);
+        }
+        .board-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid var(--light-bg);
+        }
+        .board-member h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .board-member p {
+            color: var(--dark-gray);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.png" alt="ACIAM Logo" class="nav-logo">
+                    <h1 class="nav-title">ACIAM <span>Franco da Rocha</span></h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="gestao.html">Gestão</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="associe-se.html" class="btn-cta">Associe-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Nossa Gestão</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">Conheça os líderes comprometidos com o fortalecimento do comércio, indústria e agronegócio de Franco da Rocha.</p>
+            
+            <div class="board-grid">
+                <div class="board-member">
+                    <img src="marconi.jpg" alt="Presidente">
+                    <h3>Marconi Aguiar</h3>
+                    <p>Presidente</p>
+                </div>
+        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="ACIAM Logo" class="footer-logo">
+                <p>Associação Comercial Industrial e do Agronegócio Metropolitano Paulista.</p>
+                <p>A nossa força vem da união.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Rua Doutor Hamilton Prado, 746, 1º Andar</p>
+                <p>Centro, Franco da Rocha - SP</p>
+                <p>Tel: (11) 3014-0455</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul style="list-style: none;">
+                    <li><a href="sobre.html" style="color: white;">Sobre Nós</a></li>
+                    <li><a href="servicos.html" style="color: white;">Serviços</a></li>
+                    <li><a href="contato.html" style="color: white;">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACIAM Franco da Rocha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

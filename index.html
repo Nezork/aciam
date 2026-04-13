@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACIAM Franco da Rocha - A Casa do Empreendedor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos da Home */
+        .hero {
+            background: linear-gradient(rgba(0,107,63,0.8), rgba(0,107,63,0.8)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 5%;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .services-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.png" alt="ACIAM Logo" class="nav-logo">
+                    <h1 class="nav-title">ACIAM <span>Franco da Rocha</span></h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="gestao.html">Gestão</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="associe-se.html" class="btn-cta">Associe-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bem-vindo à Casa do Empreendedor</h2>
+            <p>Representamos, defendemos e fortalecemos as micro e pequenas empresas, MEIs e o agronegócio de Franco da Rocha.</p>
+            <a href="associe-se.html" class="btn-cta" style="background-color: var(--secondary-color);">Quero me Associar</a>
+        </section>
+
+        <section id="destaques">
+            <h2 class="section-title">Nossa Atuação</h2>
+            <div class="services-preview">
+                <div class="service-card">
+                    <h3>Defesa de Interesses</h3>
+                    <p>Atuamos junto aos órgãos públicos para garantir os direitos e o crescimento do comércio local.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fortalecimento de MEIs</h3>
+                    <p>Oferecemos suporte e orientação técnica para microempreendedores individuais.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Agronegócio</h3>
+                    <p>Apoio estratégico para o desenvolvimento do agronegócio metropolitano paulista.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: var(--light-bg);">
+            <h2 class="section-title">Por que se associar?</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; margin-bottom: 30px;">A união faz a força. Ao fazer parte da ACIAM, você tem acesso a benefícios exclusivos, networking qualificado e uma voz ativa na economia de Franco da Rocha.</p>
+                <a href="sobre.html" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Saiba mais sobre nossa história &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="ACIAM Logo" class="footer-logo">
+                <p>Associação Comercial Industrial e do Agronegócio Metropolitano Paulista.</p>
+                <p>A nossa força vem da união.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Rua Doutor Hamilton Prado, 746, 1º Andar</p>
+                <p>Centro, Franco da Rocha - SP</p>
+                <p>Tel: (11) 3014-0455</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul style="list-style: none;">
+                    <li><a href="sobre.html" style="color: white;">Sobre Nós</a></li>
+                    <li><a href="servicos.html" style="color: white;">Serviços</a></li>
+                    <li><a href="contato.html" style="color: white;">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACIAM Franco da Rocha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
