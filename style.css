@@ -422,15 +422,15 @@ footer {
 }
 
 .about-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--text-light);
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
 .about-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
     border-radius: 15px;
     box-shadow: var(--shadow);
     margin-top: 30px;
